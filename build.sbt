@@ -8,11 +8,11 @@ lazy val root = (project in file("."))
       guice,
       "com.h2database" % "h2" % "1.4.199",
       "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test,
-    //  jdbc,
-   //   jdbc % Test,
-    //  javaJdbc,
+      jdbc,
+      jdbc % Test,
+      javaJdbc,
       "org.playframework.anorm" %% "anorm" % "2.6.5",
-   //   "org.postgresql" % "postgresql" % "9.4-1200-jdbc41"
+      "org.postgresql" % "postgresql" % "9.4-1200-jdbc41"
     ),
     scalacOptions ++= Seq(
       "-feature",
