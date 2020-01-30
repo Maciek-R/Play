@@ -1,7 +1,7 @@
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
   .settings(
-    name := """play-scala-starter-example""",
+    name := """play-app""",
     version := "1.0-SNAPSHOT",
     scalaVersion := "2.13.1",
     libraryDependencies ++= Seq(
@@ -12,7 +12,9 @@ lazy val root = (project in file("."))
       jdbc % Test,
       javaJdbc,
       "org.playframework.anorm" %% "anorm" % "2.6.5",
-      "org.postgresql" % "postgresql" % "9.4-1200-jdbc41"
+      "org.postgresql" % "postgresql" % "9.4-1200-jdbc41",
+      ws,
+      "com.softwaremill.macwire" %% "macros" % "2.3.3" % "provided"
     ),
     scalacOptions ++= Seq(
       "-feature",

@@ -11,5 +11,9 @@ GET     /message                    controllers.AsyncController.message
 
 GET     /users/list                 controllers.HomeController.listUsers
 
+GET     /acquireToken               modules.token.tokenRetriever.TokenRetrieverController.acquireToken
+
+GET     /generateToken              modules.token.tokenGenerator.TokenGeneratorController.generateToken
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(file)
