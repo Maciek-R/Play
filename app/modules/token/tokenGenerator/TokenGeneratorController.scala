@@ -8,8 +8,7 @@ import play.api.mvc._
 
 import scala.concurrent.ExecutionContext
 
-@Singleton
-class TokenGeneratorController @Inject()(cc: ControllerComponents, ws: WSClient)(implicit ec: ExecutionContext) extends AbstractController(cc) {
+class TokenGeneratorController(cc: ControllerComponents, ws: WSClient)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
   def generateToken = Action { request =>
 

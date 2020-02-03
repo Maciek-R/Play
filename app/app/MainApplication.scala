@@ -23,5 +23,6 @@ class MainApplication(context: Context)
 
   lazy val db = this.dbApi.database("default")
 
-  lazy val router = wire[Routes]
+  val prefix: String = "/"
+  lazy val router = wire[Routes].withPrefix(prefix)
 }

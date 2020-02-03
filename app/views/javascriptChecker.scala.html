@@ -1,0 +1,13 @@
+@()(implicit assetsFinder: AssetsFinder)
+
+@main("Welcome to Play") {
+
+  <div>Text</div>
+  <script>helloFun()</script>
+
+  <div ng-app="myShoppingList" ng-controller="myCtrl">
+   <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+   </ul>
+  </div>
+}

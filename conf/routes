@@ -15,5 +15,7 @@ GET     /acquireToken               modules.token.tokenRetriever.TokenRetrieverC
 
 GET     /generateToken              modules.token.tokenGenerator.TokenGeneratorController.generateToken
 
+GET     /checkJs                    modules.jsChecker.JsCheckerController.checkJavascript
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(file)
