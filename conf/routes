@@ -17,5 +17,7 @@ GET     /generateToken              modules.token.tokenGenerator.TokenGeneratorC
 
 GET     /checkJs                    modules.jsChecker.JsCheckerController.checkJavascript
 
+GET     /guessNumber                modules.guessNumber.GuessNumberController.guessNumber
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(file)
